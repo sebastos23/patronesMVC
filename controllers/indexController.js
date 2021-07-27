@@ -1,6 +1,6 @@
 let path = require('path')
 
-const controller = {
+/* const controller = {
     index:(req, res)=>{
         res.sendFile(path.join(__dirname, '../views/index.html'))
     },
@@ -9,4 +9,12 @@ const controller = {
     }
     
 }
-module.exports = controller;
+module.exports = controller; */
+module.exports = controller = {
+    index:(req, res)=>{
+        res.sendFile(path.join(__dirname, '../views/index.html'))
+    },
+    contacto:(req, res)=>{
+        res.sendFile(path.join(__dirname, '../views/contactos.html'))
+    }
+}
